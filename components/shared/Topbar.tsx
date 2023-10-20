@@ -1,7 +1,7 @@
 import { OrganizationSwitcher, SignOutButton, SignedIn } from "@clerk/nextjs"; // Importing necessary components from the Clerk library for authentication and organization switching.
 import Image from "next/image"; // Importing the "Image" component from Next.js for displaying images.
 import Link from "next/link"; // Importing the "Link" component from Next.js for routing.
-
+import {dark} from '@clerk/themes'
 import React from "react"; // Importing the React library.
 
 function Topbar() {
@@ -44,6 +44,7 @@ function Topbar() {
         </div>
         <OrganizationSwitcher
           appearance={{
+            baseTheme : dark, // Setting the base theme to dark.
             elements: {
               organizationSwitcherTrigger: "py-2 px-4 text-light-1", // Styling the organization switcher trigger element.
             },
