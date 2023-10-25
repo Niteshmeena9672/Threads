@@ -21,7 +21,7 @@ const LeftSidebar = () => {
             (pathname.includes(link.route) && link.route.length > 1) ||
             pathname === link.route;
 
-          
+          if (link.route === "/profile") link.route = `${link.route}/${userId}`;
 
           return (
             <Link
@@ -47,7 +47,7 @@ const LeftSidebar = () => {
           <SignOutButton signOutCallback={() => router.push("/sign-in")}>
             <div className='flex cursor-pointer gap-4 p-4'>
               <Image
-                src='./assets/logout.svg'
+                src='/assets/logout.svg'
                 alt='logout'
                 width={24}
                 height={24}
