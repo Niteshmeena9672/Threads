@@ -1,4 +1,4 @@
-# Threads Project
+# Threads Project (https://nitesh-threads-clone.netlify.app/)
 
 ![Threads Logo](threads-logo.png)
 
